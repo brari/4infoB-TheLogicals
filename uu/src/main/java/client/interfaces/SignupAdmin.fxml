@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="609.0" prefWidth="941.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.interfaces.SignupAdminController">
+   <children>
+      <TextField fx:id="sign_mail" layoutX="358.0" layoutY="91.0" />
+      <TextField fx:id="sign_number" layoutX="358.0" layoutY="240.0" />
+      <TextField fx:id="sign_adress" layoutX="358.0" layoutY="186.0" />
+      <Label layoutX="145.0" layoutY="95.0" text="mail" />
+      <Label layoutX="145.0" layoutY="252.0" text="phone number" />
+      <Label layoutX="145.0" layoutY="198.0" text="adress" />
+      <Label layoutX="145.0" layoutY="153.0" text="password" />
+      <Button fx:id="sign_button" layoutX="374.0" layoutY="516.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="117.0" text="Sign up" />
+      <PasswordField fx:id="pass_sing" layoutX="358.0" layoutY="141.0" />
+      <Label layoutX="136.0" layoutY="288.0" text="pts fidelités" visible="false" />
+      <TextField fx:id="fid_sign" layoutX="358.0" layoutY="284.0" visible="false" />
+      <Label layoutX="145.0" layoutY="296.0" prefHeight="17.0" prefWidth="44.0" text="cin" />
+      <TextField fx:id="sign_number1" layoutX="358.0" layoutY="293.0" />
+   </children>
+</AnchorPane>

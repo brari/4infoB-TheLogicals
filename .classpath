@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" output="target/classes" path="src/main/java">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry excluding="**" kind="src" output="target/classes" path="src/main/resources">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" output="target/test-classes" path="src/test/java">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry excluding="**" kind="src" output="target/test-classes" path="src/test/resources">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.fx.ide.jdt.core.JAVAFX_CONTAINER"/>
+	<classpathentry kind="lib" path="C:/Users/hp/Desktop/J2EE/workspace/lib/com.fasterxml.jackson.databind.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hp/Desktop/J2EE/workspace/lib/commons-codec-1.9.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hp/Desktop/J2EE/workspace/lib/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hp/Desktop/J2EE/workspace/lib/controlsfx-8.40.14.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hp/Desktop/J2EE/workspace/lib/fontawesomefx-8.9.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hp/Desktop/J2EE/workspace/lib/GMapsFX-2.12.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hp/Desktop/J2EE/workspace/lib/guava-18.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hp/Desktop/J2EE/workspace/lib/httpclient-4.5.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hp/Desktop/J2EE/workspace/lib/httpcore-4.4.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hp/Desktop/J2EE/workspace/lib/jackson-annotations-2.8.7.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hp/Desktop/J2EE/workspace/lib/jackson-core-2.8.7.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hp/Desktop/J2EE/workspace/lib/jackson-databind-2.8.7.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hp/Desktop/J2EE/workspace/lib/javax.mail-1.6.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hp/Desktop/J2EE/workspace/lib/jBCrypt-0.4.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hp/Desktop/J2EE/workspace/lib/jfoenix-1.6.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hp/Desktop/J2EE/workspace/lib/jGoogleMaps.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hp/Desktop/J2EE/workspace/lib/joda-time-2.5.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hp/Desktop/J2EE/workspace/lib/json-20140107.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hp/Desktop/J2EE/workspace/lib/log4j-api-2.11.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hp/Desktop/J2EE/workspace/lib/log4j-core-2.11.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hp/Desktop/J2EE/workspace/lib/mysql-connector-java-5.1.23-bin.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hp/Desktop/J2EE/workspace/lib/restfb-2.18.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hp/Desktop/J2EE/workspace/lib/slf4j-api-1.7.25.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hp/Desktop/J2EE/workspace/lib/twilio-7.17.8.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hp/Desktop/J2EE/workspace/lib/Excel/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hp/Desktop/J2EE/workspace/lib/Excel/poi-3.9.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hp/Desktop/J2EE/workspace/lib/Excel/poi-ooxml-3.9.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hp/Desktop/J2EE/workspace/lib/Excel/poi-ooxml-schemas-3.9.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hp/Desktop/J2EE/workspace/lib/Excel/xmlbeans-2.3.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hp/Desktop/J2EE/workspace/lib/NotificationLibs/controlsfx-samples-8.40.14.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hp/Desktop/J2EE/workspace/lib/NotificationLibs/fxsampler-1.0.10.jar"/>
+	<classpathentry kind="output" path="target/classes"/>
+</classpath>

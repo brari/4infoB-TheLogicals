@@ -20,10 +20,15 @@ import tn.esprit.CRmapp.entities.User;
 public interface adminServiceRemote {
 	public void  addUser(Admin f);
 	public void removeUser(int id);
-	public void updateUser(User UserNewValues, int id);
+	public void updateUser(Admin UserNewValues, int id);
 	public User findUserById(int id);
 	public List<Client> findAllUsers();
 	public boolean authentifier(String login, String password);
 	public String IdentifierOperator(String mail);
+	public List<Client> findAllUsers1();
+	public List<Client> findAllUsers2();
+	public List<Client> findAllUsers3();
+	public List<Admin> findAllAdmins();
+	public void removeAdmin(int id);
 
 }

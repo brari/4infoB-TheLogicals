@@ -1,0 +1,53 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:c="http://java.sun.com/jstl/core" 
+	xmlns:fn="http://java.sun.com/jsp/jstl/functions" 
+	xmlns:jsf="http://xmlns.jcp.org/jsf"
+	xmlns:p="http://primefaces.org/ui"
+	>
+	   
+	   <h:head>
+	<title>Signup</title>
+	
+</h:head>
+
+<body>
+
+<h:form id="form">
+<h:panelGrid columns="2">
+<h:outputText value="mail"/>
+<h:inputText value="#{userBean.email}"/>
+
+
+
+<h:outputText value="password" />
+<h:inputText value="#{userBean.password}"/>
+
+<h:outputText value="adress"/>
+<h:inputText value="#{userBean.address}"/>
+
+<h:outputText value="phone-number"/>
+<h:inputText value="#{userBean.phoneNumber}"/>
+
+<h:commandButton action="#{userBean.ajouterUser()}"   value="singup" />
+
+</h:panelGrid>
+</h:form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</ui:composition>

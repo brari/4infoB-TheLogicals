@@ -42,25 +42,27 @@ public class adminService implements adminServiceRemote, userServiceLocal {
 		em.persist(u);
 		
 	}
+	@Override
+	public void removeAdmin(int id)
+	{
+		em.remove(em.find(Admin.class, id));
+	}
 
 	@Override
 	public void removeUser(int id)
 	{
-		em.remove(em.find(User.class, id));
+		em.remove(em.find(Client.class, id));
 	}
 
 	@Override
-	public void updateUser(User userNewValues, int id)
+	public void updateUser(Admin userNewValues, int id)
 	{
-		/*user f = em.find(User.class, id);
-		f.setCin(userNewValues.getCin());
-		f.setFirst_name(userNewValues.getFirst_name());
-		f.setLast_name(userNewValues.getLast_name());
-		f.setUsername(userNewValues.getUsername());
+		Admin f = em.find(Admin.class, id);
+		f.setAddress(userNewValues.getAddress());
 		f.setEmail(userNewValues.getEmail());
-		f.setNum_tlf(userNewValues.getNum_tlf());
-		f.setPassword(userNewValues.getPassword());
-		f.setRole(userNewValues.getRole());*/
+		
+		f.setPhoneNumber(userNewValues.getPhoneNumber());
+		f.setCin(userNewValues.getCin());
 	}
 
 	@Override
@@ -69,6 +71,14 @@ public class adminService implements adminServiceRemote, userServiceLocal {
 		User f = em.find(User.class, id);
 		return f;
 	}
+	
+	@Override
+	public List<Admin> findAllAdmins()
+	{
+		TypedQuery<Admin> query = em.createQuery("SELECT m FROM Admin m", Admin.class);
+		return query.getResultList();
+	} 
+	
 
 	@Override
 	public List<Client> findAllUsers()
@@ -77,6 +87,25 @@ public class adminService implements adminServiceRemote, userServiceLocal {
 		return query.getResultList();
 	} 
 	
+	
+	@Override
+	public List<Client> findAllUsers1()
+	{
+		TypedQuery<Client> query = em.createQuery("SELECT m FROM Client m WHERE (SUBSTR(m.phoneNumber,1,1)='9')", Client.class);
+		return query.getResultList();
+	} 
+	@Override
+	public List<Client> findAllUsers2()
+	{
+		TypedQuery<Client> query = em.createQuery("SELECT m FROM Client m WHERE (SUBSTR(m.phoneNumber,1,1)='2')", Client.class);
+		return query.getResultList();
+	} 
+	@Override
+	public List<Client> findAllUsers3()
+	{
+		TypedQuery<Client> query = em.createQuery("SELECT m FROM Client m WHERE (SUBSTR(m.phoneNumber,1,1)='5')", Client.class);
+		return query.getResultList();
+	} 
 	/*
 	 * 
 	 * public List<Etudiant> ListeDesEtudiantsQuiVeulentUneAnnulation(int anul) {

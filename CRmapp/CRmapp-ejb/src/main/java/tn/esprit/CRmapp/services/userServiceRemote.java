@@ -16,7 +16,7 @@ public interface userServiceRemote {
 	public void removeUser(int id);
 	public void updateUser(Client userNewValues, int id);
 	public Client findUserById(int id);
-	public List<User> findAllUsers();
+	public List<Client> findAllUsers();
 	public boolean authentifier(String login, String password);
 	public String IdentifierOperator(String mail);
 

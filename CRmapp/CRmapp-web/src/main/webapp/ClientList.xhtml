@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	   xmlns:f="http://xmlns.jcp.org/jsf/core"
+	   xmlns:h="http://xmlns.jcp.org/jsf/html"
+	   xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	   xmlns:jsf="http://xmlns.jcp.org/jsf"
+	   xmlns:pt="http://xmlns.jcp.org/jsf/passthrough"
+	   xmlns:p="http://primefaces.org/ui">
+	   
+	   <h:head>
+	<title>List</title>
+</h:head>
+<body style="background-image: url(C:\Users\samination\Desktop\tt.jpeg)" id="sen">
+<p:panel id="pan1" header="User">
+<h:form id="form">
+<p:dataTable  value="#{userBean.clientList}" var="client" border="1" >
+
+  <f:facet name="header">
+            <p:outputPanel>
+                <h:outputText value="Search all fields:" />
+                <p:inputText id="globalFilter" onkeyup="PF('client').filter()" style="width:150px" placeholder="Enter keyword"/>
+            </p:outputPanel>
+        </f:facet>
+ 
+
+<p:column headerText="login">
+
+<h:outputText value="#{client.email}" />
+</p:column>
+
+<p:column headerText="password">
+
+<h:outputText value="#{client.password}" />
+</p:column>
+<p:column headerText="adress">
+
+<h:outputText value="#{client.address}" />
+</p:column>
+<p:column headerText="Phone Number">
+
+<h:outputText value="#{client.phoneNumber}" />
+</p:column>
+<p:column headerText="Fidelity Points">
+
+<h:outputText value="#{client.fidelity_pt}" />
+</p:column>
+
+<p:column headerText="Action"> 
+
+
+
+<p:commandButton value="delete" id="delete" update="pan1"  action="#{userBean.supprimerClient(client.idUser)}" style="margin-right:20px;" styleClass="ui-priority-primary" />
+ <p:commandButton value="set" id="set" update="pan1"  action="#{userBean.modifier_client(client)}" style="margin-right:20px;" styleClass="ui-priority-primary" /> 
+
+</p:column>
+
+
+
+</p:dataTable>
+
+<p:panel id="pan" header="Signup">
+        
+<h:panelGrid columns="2">
+<h:outputText value="mail"/>
+<h:inputText value="#{userBean.email}"/>
+
+
+
+<h:outputText value="password" />
+<h:inputText value="#{userBean.password}"/>
+
+<h:outputText value="adress"/>
+<h:inputText value="#{userBean.address}"/>
+
+<h:outputText value="phone-number"/>
+<h:inputText value="#{userBean.phoneNumber}"/>
+
+
+
+<p:commandButton value="signup" id="signup"  update="pan1" action="#{userBean.ajouterUser()}" style="margin-right:20px;" styleClass="ui-priority-primary" />
+ <p:commandButton value="update" id="up"  action="#{userBean.miseajour_client()}" style="margin-right:20px;" styleClass="ui-priority-primary" /> 
+ 
+
+
+</h:panelGrid>
+</p:panel>
+
+</h:form>
+
+<p:link outcome="Login" value="Logout">
+
+
+</p:link>
+
+
+</p:panel>
+</body>
+
+</html>

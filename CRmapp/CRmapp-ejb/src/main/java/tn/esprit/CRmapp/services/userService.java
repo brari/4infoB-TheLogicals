@@ -44,7 +44,7 @@ public class userService implements userServiceRemote, userServiceLocal {
 	@Override
 	public void removeUser(int id)
 	{
-		em.remove(em.find(User.class, id));
+		em.remove(em.find(Client.class, id));
 	}
 
 	@Override
@@ -67,14 +67,28 @@ public class userService implements userServiceRemote, userServiceLocal {
 	}
 
 	@Override
-	public List<User> findAllUsers()
+	public List<Client> findAllUsers()
 	{
-		List<User> u = em.createQuery(" select * from user", User.class).getResultList();
+		List<Client> u = em.createQuery("SELECT m FROM Client m", Client.class).getResultList();
 		return u;
 	} 
 	
 	
-	
+	/*public boolean authentifier(String login, String password) {
+		boolean a=true;
+		Client utilisateur = null;
+		Query query = em.createQuery("select u from Client u having( SUBSTR(u.phoneNumber,0,1)='9' )");
+		query.setParameter("e", login).setParameter("p", password);
+		try {
+			utilisateur = (Client) query.getSingleResult();
+		} catch (Exception e) {
+			Logger.getLogger(this.getClass().getName()).log(Level.WARNING, "authentication failed with login="+login+" and password="+password);
+			a=false ;
+		
+		}
+		return a;
+		
+	}*/
 	
 	public boolean authentifier(String login, String password) {
 		boolean a=true;

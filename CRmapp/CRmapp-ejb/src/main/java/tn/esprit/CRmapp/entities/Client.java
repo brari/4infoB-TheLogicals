@@ -19,7 +19,7 @@ public class Client extends User implements Serializable{
 	}
 
 	public void setFidelity_pt(int fidelity_pt) {
-		this.fidelity_pt = 0;
+		this.fidelity_pt = fidelity_pt;
 	}
 
 	public Client() {
@@ -29,7 +29,7 @@ public class Client extends User implements Serializable{
 
 	public Client(String email, String password, String address, String phoneNumber,int fidelity_pt) {
 		super(email, password, address, phoneNumber);
-		this.fidelity_pt=fidelity_pt;
+		this.fidelity_pt=0;
 		
 		// TODO Auto-generated constructor stub
 		
